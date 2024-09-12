@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+Steps to Run .title {
+  @apply text-4xl font-bold text-center my-7 text-font tracking-widest;
+}
+.select {
+  @apply block relative appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded-xl leading-tight focus:outline-none focus:bg-white focus:border-gray-500;
+}
+
+.label {
+  @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2;
+}
+.flex-col-center {
+  @apply flex flex-col justify-center items-center;
+}
+.text-font {
+  font-family: cursive;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg;
+}
+.scoial {
+  @apply flex justify-between items-center  col-span-6 rounded-xl border  bg-[#f7f7f7] p-3 opacity-[80%];
+}
+
+.socilaMedia img {
+  @apply h-8 w-8 rounded-full border me-1;
+}
+/* Style pour le conteneur du slider */
+.slider-container {
+  width: 100%;
+  height: 400px; /* Ajuste la hauteur selon tes besoins */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style pour l'image du slider */
+.slide-image {
+  width: 100%;
+  height: auto; /* Assure-toi que l'image garde ses proportions */
+  object-fit: cover; /* Couvre tout le conteneur sans déformer l'image */
+}
